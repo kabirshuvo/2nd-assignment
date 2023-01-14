@@ -14,9 +14,16 @@ body {
   margin: 0 auto;
   max-width: 1200px;
 }
+.prymari-btn {
+  padding: 10px 20px;
+  background-color: darkorange;
+  border: none;
+  border-radius: 6px;
+}
 /* Header Section Styles Starts From Here */
 header {
   background-color: #fff;
+  padding-bottom: 5%;
 }
 header nav {
   display: flex;
@@ -50,7 +57,7 @@ header nav ul li a {
   color: #424242;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 5px;
+  padding: 5px 10px;
   transition: transform 0.33s ease;
 }
 header nav ul li a:hover {
@@ -60,9 +67,129 @@ header nav ul li a:hover {
 }
 /* Header Section Ends Here */
 /* Main Section Starts From Here */
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-wrapper h1 {
+}
+.hero-wrapper p {
+}
+.hero-wrapper button {
+}
+.hero-wrapper img {
+}
+/* Hero Section Style Ends Here */
+/* Feature Section Style Starts from Here */
+.feature-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 50px 0 50px 0;
+}
+.feature-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.feature-images img {
+}
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature-text h2 {
+}
+.feature-text h3 {
+}
+.feature-text p {
+}
+.feature-text button {
+}
+/* Features Section Ends Here */
+/* Experience Section Starts from here */
+.exp-warpper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-image: url("../images/architect.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.caption h2 {
+}
+.caption p {
+}
+.body-text h4 {
+}
+.body-text p {
+}
+.exp-button {
+}
+/* Experience Section Ends Here */
+/* Some Facts Section Starts from Here */
+.facts-warpper {
+  display: flex;
+  flex-direction: column;
+}
+.facts h4 {
+}
+.facts p {
+}
+.fact-boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.fact-box {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rebeccapurple;
+  width: 150px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+.fact-box:hover {
+}
+.fact-box img {
+  width: 50px;
+}
+.fact-box h3 {
+}
+.fact-box p {
+}
+/* SOme Facts section ends here */
+/* Sponsor Section Starts from here */
+.sponsor-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.sponsor-heading h2{
 
+}
+.sponsor-heading p{
 
+}
+.sponsor-logs{
+display: inline-flex;
+gap: 30px;
+justify-content: center;
+}
+.sponsor-logs img{
+
+}
+/* Sponsor Secton Ends Here */
 /* Main Section Ends Here */
+/* Footer Styles Gose here */
+
+
+/* Media Querries */
 @media screen and (max-width: 576px) {
 }
 
