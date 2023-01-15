@@ -75,14 +75,14 @@ header nav ul li a:hover {
 }
 /* Header Section Ends Here */
 /* Main Section Starts From Here */
-.hero-wrapper {
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
-.hero-wrapper h1 {
+.hero h1 {
   width: 862px;
   font-style: normal;
   font-weight: 700;
@@ -90,7 +90,7 @@ header nav ul li a:hover {
   text-align: center;
   color: #131313;
 }
-.hero-wrapper p {
+.hero p {
   width: 868px;
   height: 52px;
   font-style: normal;
@@ -116,7 +116,7 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 50px 0 50px 0;
+  padding: 100px 0 50px 0;
 }
 .feature-images {
   display: grid;
@@ -170,13 +170,15 @@ header nav ul li a:hover {
 }
 /* Features Section Ends Here */
 /* Experience Section Starts from here */
+.experience {
+  display: flex;
+}
 .exp-warpper {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: left;
   padding-top: 50px;
-  background-image: url("../images/architect.png");
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -223,6 +225,8 @@ header nav ul li a:hover {
   color: #fff;
   border: none;
   border-radius: 4px;
+  width: 200px;
+  z-index: 1;
 }
 .ten-tex {
   font-size: 2rem;
@@ -258,6 +262,16 @@ header nav ul li a:hover {
   justify-content: space-between;
   gap: 10px;
 }
+.fact-box-warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff900e;
+  border-radius: 4px;
+  width: 240px;
+  height: 240px;
+}
 .fact-box {
   display: flex;
   flex-direction: column;
@@ -266,19 +280,11 @@ header nav ul li a:hover {
   text-align: center;
   width: 169px;
   height: 136px;
+  transition: all ease-out 250ms;
 }
-.fact-box-warpper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ff900e;
-  border-radius: 4px;
-  width: 240px;
-  height: 240px;
-}
-.fact-box-warpper:hover {
-  transform: rotate(180deg);
+
+.fact-box:hover {
+  transform: scale(125%);
 }
 .fact-box img {
   width: 50px;
@@ -302,29 +308,26 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
   text-align: center;
+  gap: 20px;
 }
 .sponsor-heading {
   width: 540px;
   height: 142px;
 }
-.sponsor-heading h2 {
+.sponsor-wrapper h2 {
   font-weight: 700;
   font-size: 45px;
-  line-height: 53px;
   color: #131313;
 }
-.sponsor-heading p {
+.sponsor-wrapper p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
   text-align: center;
   color: #727272;
-  padding-top: 24px;
-  
 }
 .sponsor-logs {
+  padding-top: 50px;
   display: flex;
   gap: 80px;
   justify-content: space-between;
@@ -402,6 +405,9 @@ footer p {
 
 /* Media Querries */
 @media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   header nav {
     flex-direction: column;
   }
@@ -412,19 +418,19 @@ footer p {
     gap: 2px;
   }
 
-  .hero-wrapper h1 {
+  .hero h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
+    justify-content: center;
+    text-align: center;
   }
-  .hero-wrapper p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    flex-wrap: wrap;
+  .hero p {
     width: 400px;
+    text-align: center;
+    justify-content: center;
   }
-  .hero-wrapper button {
+  .hero button {
     margin-top: 32px;
     margin-bottom: 32px;
   }
@@ -458,26 +464,61 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .caption h2 {
+  .experience {
+    flex-direction: column-reverse;
+  }
+  .caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    width: 500px;
+    flex-wrap: wrap;
+    align-items: left;
+    padding-left: 20px;
+  }
+  .caption h2 {
+    text-align: left;
   }
   .caption p {
     color: #ff900e;
-    justify-content: center;
-    align-items: center;
+    text-align: justify;
     flex-wrap: wrap;
-    margin: 10%;
-    width: 420px;
-    text-align: center;
+    width: 90vw;
+    align-items: center;
+    font-weight: 500;
+    align-items: center;
   }
   .body-text h4 {
-    width: 400px;
+    width: 380px;
     flex-wrap: wrap;
   }
   .body-text p {
-    width: 400px;
+    width: 370px;
     flex-wrap: wrap;
     color: black;
+    text-align: justify;
+    padding-bottom: 5px;
+  }
+  .exp-button {
+    bottom: 0;
+    left: 125px;
+    margin: 10px 0;
+  }
+  .facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .facts h4 {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .facts p {
+    padding: 10px;
+    width: 90vw;
+    text-align: center;
   }
   .facts-warpper {
     justify-content: center;
@@ -495,16 +536,20 @@ footer p {
   .sponsor-wrapper {
     align-items: center;
     justify-content: center;
-   
+    gap: 15px;
+  }
+  .sponsor-wrapper h2 {
+    padding-bottom: 5px;
   }
   .sponsor-heading {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-  .sponsor-heading p{
+  .sponsor-wrapper p {
     text-align: center;
-  
+    padding-bottom: 5px;
+    padding-top: 0;
   }
   .sponsor-logs {
     flex-direction: column;
@@ -516,6 +561,49 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+  header nav ul {
+    gap: 0;
+  }
+  .hero p {
+    width: 700px;
+  }
+  .feature-wrapper {
+    flex-direction: column;
+  }
+  .feature-text {
+    align-items: center;
+    text-align: center;
+  }
+  .experience {
+    flex-direction: column-reverse;
+  }
+  .exp-warpper {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+  }
+  .exp-button {
+    bottom: 40px;
+    left: 200px;
+    margin: 10px 0;
+  }
+  .facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fact-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sponsor-logs {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 550px;
+  }
 }
 
 @media screen and (max-width: 992px) {
