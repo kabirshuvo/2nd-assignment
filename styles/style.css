@@ -54,7 +54,7 @@ header nav ul {
   gap: 30px;
 }
 header nav ul li {
-  display: inline-flex;
+  display: flex;
 }
 header nav ul li a {
   font-style: normal;
@@ -87,7 +87,6 @@ header nav ul li a:hover {
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
-  /* line-height: 75px; */
   text-align: center;
   color: #131313;
 }
@@ -177,7 +176,6 @@ header nav ul li a:hover {
   gap: 30px;
   align-items: left;
   padding-top: 50px;
-
   background-image: url("../images/architect.png");
   background-position: right;
   background-repeat: no-repeat;
@@ -324,6 +322,7 @@ header nav ul li a:hover {
   text-align: center;
   color: #727272;
   padding-top: 24px;
+  
 }
 .sponsor-logs {
   display: flex;
@@ -403,6 +402,117 @@ footer p {
 
 /* Media Querries */
 @media screen and (max-width: 576px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .hero-wrapper h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .hero-wrapper p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+  .hero-wrapper button {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .hero-wrapper img {
+    object-fit: cover;
+    width: 400px;
+  }
+  .feature-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature-images {
+    grid-template-columns: 1fr;
+  }
+  .feature-text {
+    align-items: center;
+    width: 400px;
+  }
+  .feature-text h2 {
+    width: 400px;
+  }
+  .feature-text p {
+    width: 400px;
+  }
+  .feature-text button {
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
+  .exp-warpper {
+    text-align: left;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .caption h2 {
+    text-align: center;
+  }
+  .caption p {
+    color: #ff900e;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10%;
+    width: 420px;
+    text-align: center;
+  }
+  .body-text h4 {
+    width: 400px;
+    flex-wrap: wrap;
+  }
+  .body-text p {
+    width: 400px;
+    flex-wrap: wrap;
+    color: black;
+  }
+  .facts-warpper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .facts-warpper p {
+    width: 400px;
+  }
+  .fact-boxes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsor-wrapper {
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .sponsor-heading {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sponsor-heading p{
+    text-align: center;
+  
+  }
+  .sponsor-logs {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .email {
+    width: 260px;
+  }
 }
 
 @media screen and (max-width: 768px) {
