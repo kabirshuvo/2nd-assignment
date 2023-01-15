@@ -420,8 +420,7 @@ footer p {
   body {
     overflow-x: hidden;
   }
-  header {
-  }
+
   header nav {
     flex-direction: column;
   }
@@ -580,11 +579,23 @@ footer p {
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  header nav ul {
-    gap: 0;
+  header nav {
+    flex-direction: column;
   }
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+  }
+  .hero {
+    padding-top: 220px;
+  }
+
   .hero p {
     width: 700px;
+    padding: 0 30px 20px 30px;
   }
   .feature-wrapper {
     flex-direction: column;
